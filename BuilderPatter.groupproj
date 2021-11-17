@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EFCCCFFF-90BD-41CF-B6F7-BAA1BDAE54A4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="GofVCLBuilder\GofBuilderClassAbstract.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GofBuilder\GofBuilderVCLInterfaces.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GofFMXBuilder\GofBuilderFMXInterfaces.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GofBuilderArquivos\GofBuilderarquivos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BlochsBuilder\BlochsBuilder.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GofBuilderGeneratorReport\GofBuilderGeneratorReport.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GofBuilderClassAbstract">
+        <MSBuild Projects="GofVCLBuilder\GofBuilderClassAbstract.dproj"/>
+    </Target>
+    <Target Name="GofBuilderClassAbstract:Clean">
+        <MSBuild Projects="GofVCLBuilder\GofBuilderClassAbstract.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GofBuilderClassAbstract:Make">
+        <MSBuild Projects="GofVCLBuilder\GofBuilderClassAbstract.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GofBuilderVCLInterfaces">
+        <MSBuild Projects="GofBuilder\GofBuilderVCLInterfaces.dproj"/>
+    </Target>
+    <Target Name="GofBuilderVCLInterfaces:Clean">
+        <MSBuild Projects="GofBuilder\GofBuilderVCLInterfaces.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GofBuilderVCLInterfaces:Make">
+        <MSBuild Projects="GofBuilder\GofBuilderVCLInterfaces.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GofBuilderFMXInterfaces">
+        <MSBuild Projects="GofFMXBuilder\GofBuilderFMXInterfaces.dproj"/>
+    </Target>
+    <Target Name="GofBuilderFMXInterfaces:Clean">
+        <MSBuild Projects="GofFMXBuilder\GofBuilderFMXInterfaces.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GofBuilderFMXInterfaces:Make">
+        <MSBuild Projects="GofFMXBuilder\GofBuilderFMXInterfaces.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GofBuilderarquivos">
+        <MSBuild Projects="GofBuilderArquivos\GofBuilderarquivos.dproj"/>
+    </Target>
+    <Target Name="GofBuilderarquivos:Clean">
+        <MSBuild Projects="GofBuilderArquivos\GofBuilderarquivos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GofBuilderarquivos:Make">
+        <MSBuild Projects="GofBuilderArquivos\GofBuilderarquivos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BlochsBuilder">
+        <MSBuild Projects="BlochsBuilder\BlochsBuilder.dproj"/>
+    </Target>
+    <Target Name="BlochsBuilder:Clean">
+        <MSBuild Projects="BlochsBuilder\BlochsBuilder.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BlochsBuilder:Make">
+        <MSBuild Projects="BlochsBuilder\BlochsBuilder.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GofBuilderGeneratorReport">
+        <MSBuild Projects="GofBuilderGeneratorReport\GofBuilderGeneratorReport.dproj"/>
+    </Target>
+    <Target Name="GofBuilderGeneratorReport:Clean">
+        <MSBuild Projects="GofBuilderGeneratorReport\GofBuilderGeneratorReport.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GofBuilderGeneratorReport:Make">
+        <MSBuild Projects="GofBuilderGeneratorReport\GofBuilderGeneratorReport.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GofBuilderClassAbstract;GofBuilderVCLInterfaces;GofBuilderFMXInterfaces;GofBuilderarquivos;BlochsBuilder;GofBuilderGeneratorReport"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GofBuilderClassAbstract:Clean;GofBuilderVCLInterfaces:Clean;GofBuilderFMXInterfaces:Clean;GofBuilderarquivos:Clean;BlochsBuilder:Clean;GofBuilderGeneratorReport:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GofBuilderClassAbstract:Make;GofBuilderVCLInterfaces:Make;GofBuilderFMXInterfaces:Make;GofBuilderarquivos:Make;BlochsBuilder:Make;GofBuilderGeneratorReport:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

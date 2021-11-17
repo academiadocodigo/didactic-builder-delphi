@@ -1,0 +1,26 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 82
+  ClientWidth = 200
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 10.000000000000000000
+    Position.Y = 29.000000000000000000
+    TabOrder = 1
+    Text = 'Form Red'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 30.000000000000000000
+    TabOrder = 0
+    Text = 'Form Blue'
+    OnClick = Button2Click
+  end
+end

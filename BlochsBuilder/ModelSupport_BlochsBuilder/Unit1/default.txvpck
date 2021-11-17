@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="ffwogh26ht95z129q_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:BlochsBuilder:Unit1.TEndereco">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="400,220,136,221" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TEndereco.FLogradouro" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TEndereco.FBairro" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TEndereco.FNumero" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TEndereco.FComplemento" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TEndereco.FCidade" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TEndereco.Logradouro" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TEndereco.Numero" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TEndereco.Complemento" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TEndereco.Bairro" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TEndereco.Cidade" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:BlochsBuilder:Unit1.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.@unitclass.Form1" />
+      <reference referencedUin="delphi:l_ast:src:BlochsBuilder:Unit1.@unitclass.Form1" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:BlochsBuilder:Unit1.TForm1">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="165,1,89,81" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TForm1.Button1" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TForm1.Memo1" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TForm1.Button2" />
+      <reference referencedUin="delphi:e_method:src:BlochsBuilder:Unit1.TForm1.Button1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:BlochsBuilder:Unit1.TForm1.Button2Click(System.TObject)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:BlochsBuilder:Unit1.TTelefone">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="680,560,230,161" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TTelefone.FDDD" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TTelefone.FNumero" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TTelefone.FTipo" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TTelefone.DDD" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TTelefone.Numero" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TTelefone.Tipo" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:BlochsBuilder:Unit1.TPessoa">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="620,220,207,281" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TPessoa.FSobreNome" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TPessoa.FMes" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TPessoa.FAno" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TPessoa.FDia" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TPessoa.FNome" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TPessoa.FEndereco" />
+      <reference referencedUin="delphi:e_field:src:BlochsBuilder:Unit1.TPessoa.FTelefone" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TPessoa.Nome" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TPessoa.SobreNome" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TPessoa.Dia" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TPessoa.Mes" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TPessoa.Ano" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TPessoa.Endereco" />
+      <reference referencedUin="delphi:e_property:src:BlochsBuilder:Unit1.TPessoa.Telefone" />
+      <reference referencedUin="delphi:l_ast:src:BlochsBuilder:Unit1.TPessoa.FEndereco">
+        <property name="sourceAnchor" value="620,330" />
+        <property name="targetAnchor" value="536,330" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:BlochsBuilder:Unit1.TPessoa.Endereco">
+        <property name="sourceAnchor" value="620,322" />
+        <property name="targetAnchor" value="536,322" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_gnt:src:BlochsBuilder:Unit1.TPessoa:Unit1.TTelefone">
+        <property name="sourceAnchor" value="753,501" />
+        <property name="targetAnchor" value="753,560" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>
